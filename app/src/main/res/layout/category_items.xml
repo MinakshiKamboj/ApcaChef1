@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/image_play"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/play" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/open_sans_semibold"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/image_play"
+        android:text="Basic Level"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/button_background_filled"
+        android:backgroundTint="@color/red"
+        android:paddingLeft="20dp"
+        android:paddingTop="5dp"
+        android:fontFamily="@font/open_sans"
+        android:paddingRight="20dp"
+        android:paddingBottom="5dp"
+        android:text="View Course"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

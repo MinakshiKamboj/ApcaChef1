@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Apca Chef Online</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms_conditions">Terms &amp; Conditions</string>
+    <string name="contact">Contact Us</string>
+    <string name="our_instructors">Our Instructors</string>
+    <string name="about">About Us</string>
+    <string name="logout">LogOut</string>
+    <string name="sharapp">Share App</string>
+    <string name="rate">Rate Us</string>
+    <string name="faq">FAQ</string>
+    <string name="is_login">Login</string>
+    <string name="share_via">Share Via</string>
+    <string name="exit_msg">Please click BACK again to exit</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="errorMessage">Oops! Something went wrong</string>
+    <string name="home">Home</string>
+    <string name="myCourses">My Courses</string>
+    <string name="account">Account</string>
+    <string name="alert_message"><![CDATA[All in One Offer - Get All Levels of Pastry & Culinary in Rs. 15000]]></string>
+    <string name="alert_message1">Please login and sebscribe to watch all programs</string>
+    <string name="my_courses">My Courses</string>
+    <string name="short_lesson">Short Lessons</string>
+    <string name="e_gift">E-Gift</string>
+</resources>

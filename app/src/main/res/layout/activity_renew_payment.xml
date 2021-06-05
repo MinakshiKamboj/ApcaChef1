@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/main_banner"
+    tools:context=".activity.RenewPaymentActivity">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+
+    <LinearLayout
+        android:layout_below="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_below="@+id/txt_plan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+    <TextView
+        android:layout_below="@+id/header"
+        android:id="@+id/txt"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:fontFamily="@font/poppins_extra_light"
+        android:text="RENEWAL OFFER – ALL IN ONE STUDENTS ONLY"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/_12sdp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_below="@+id/txt"
+        android:id="@+id/txt1"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:fontFamily="@font/poppins_extra_light"
+        android:text="They say good things take time and APCA chef online program believe in this belief. We take our program to be rather a journey, a process that is meant to be enjoyed and cherished forever. Learning never stops and after the course, you will find it to be the foundation on which you shall build your reputation. In other words, consider it a library to which you will go every now and then to take ideas and references. This is the NEW RENEWAL OFFER for the students who enrolled and paid before 31st of December, 2020 and got the offer of ALL IN ONE This offer is only for students who wish to renew it-"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/_10sdp"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:id="@+id/txt_plan"
+        android:layout_below="@+id/txt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:fontFamily="@font/poppins_extra_light"
+        android:text="Please select your plan."
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="@dimen/_14sdp" />
+
+                <TextView
+                    android:id="@+id/txt_daruPlan"
+                    android:layout_below="@+id/txt1"
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:fontFamily="@font/poppins_extra_light"
+                    android:text="Please select your plan."
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:textSize="@dimen/_14sdp" />
+
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <LinearLayout
+                        android:id="@+id/linear"
+                        android:layout_below="@+id/txt_plan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="@dimen/_250sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:layout_marginBottom="@dimen/_15sdp"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            app:cardCornerRadius="@dimen/_10sdp">
+
+                            <LinearLayout
+                                android:id="@+id/linear_amt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/card_background1"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:padding="@dimen/_15sdp">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/poppins_light"
+                                            android:text="INR 25500"
+                                            android:textAllCaps="true"
+                                            android:textColor="@color/red"
+                                            android:textSize="@dimen/_16sdp" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:fontFamily="@font/poppins_light"
+                                            android:text="for straight 2 year"
+                                            android:textAllCaps="false"
+                                            android:textColor="@color/white"
+                                            android:textSize="@dimen/_10sdp" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_15sdp"
+                                    android:layout_marginRight="@dimen/_5sdp"
+                                    android:layout_marginBottom="@dimen/_10sdp"
+                                    android:fontFamily="@font/poppins_extra_light"
+                                    android:text="Some offer of ALL IN ONE Valid. Subsciption period will start once your."
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_10sdp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_15sdp"
+                                    android:layout_marginRight="@dimen/_15sdp"
+                                    android:layout_marginBottom="@dimen/_10sdp"
+                                    android:fontFamily="@font/poppins_extra_light"
+                                    android:text="It will cost you INR 175/year"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_10sdp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_15sdp"
+                                    android:layout_marginRight="@dimen/_5sdp"
+                                    android:layout_marginBottom="@dimen/_15sdp"
+                                    android:fontFamily="@font/poppins_extra_light"
+                                    android:text="NO INSTALLMENT. Program remain as it is."
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_10sdp" />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="@dimen/_250sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_15sdp"
+                            app:cardCornerRadius="@dimen/_10sdp">
+
+                            <LinearLayout
+                                android:id="@+id/linear_amt1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/card_background1"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:padding="@dimen/_15sdp">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:orientation="horizontal">
+
+                                        <TextView
+                                            android:id="@+id/tv_name"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/poppins_light"
+                                            android:text="INR 44500"
+                                            android:textAllCaps="true"
+                                            android:textColor="@color/red"
+                                            android:textSize="@dimen/_16sdp" />
+
+                                        <TextView
+                                            android:id="@+id/tv_headline"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/_5sdp"
+                                            android:fontFamily="@font/poppins_light"
+                                            android:text="for straight 4 year"
+                                            android:textAllCaps="true"
+                                            android:textColor="@color/white"
+                                            android:textSize="@dimen/_10sdp" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/tv_description"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_15sdp"
+                                    android:layout_marginRight="@dimen/_5sdp"
+                                    android:layout_marginBottom="@dimen/_10sdp"
+                                    android:fontFamily="@font/poppins_extra_light"
+                                    android:text="Some offer of ALL IN ONE Valid. Subsciption period will start once your."
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_10sdp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_15sdp"
+                                    android:layout_marginRight="@dimen/_15sdp"
+                                    android:layout_marginBottom="@dimen/_10sdp"
+                                    android:fontFamily="@font/poppins_extra_light"
+                                    android:text="It will cost you INR 195/year"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_10sdp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/_15sdp"
+                                    android:layout_marginRight="@dimen/_5sdp"
+                                    android:layout_marginBottom="@dimen/_15sdp"
+                                    android:fontFamily="@font/poppins_extra_light"
+                                    android:text="NO INSTALLMENT. Program remain as it is."
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_10sdp" />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/parent_linear_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear"
+        android:layout_margin="@dimen/_25sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_mode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_background"
+            android:drawableRight="@drawable/ic_arrow_drop_down_24"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="Payment Mode"
+            android:inputType="text"
+            android:visibility="gone"
+            android:paddingLeft="@dimen/_15sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/gray"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Payment Amount"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_payment_amount1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/poppins_medium"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp" />
+            <TextView
+                android:id="@+id/tv_payment_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:fontFamily="@font/poppins_medium"
+                android:text=""
+                android:textColor="@color/red"
+                android:textSize="@dimen/_14sdp" />
+            <TextView
+                android:id="@+id/tv_payment_amount2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/poppins_medium"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp" />
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="Card Number"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp" />
+
+        <EditText
+            android:id="@+id/edit_card_number"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/edit_background"
+            android:fontFamily="@font/poppins_medium"
+            android:inputType="phone"
+            android:maxLength="19"
+            android:paddingLeft="@dimen/_15sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Expiry Date"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp" />
+
+                <EditText
+                    android:id="@+id/etCardExpiry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_background"
+                    android:fontFamily="@font/poppins_medium"
+                    android:hint="MM/YYYY"
+                    android:inputType="phone"
+                    android:maxLength="7"
+                    android:paddingLeft="@dimen/_15sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/gray"
+                    android:textSize="@dimen/_12sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Security Code"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp" />
+
+                <EditText
+                    android:id="@+id/edit_cvv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_background"
+                    android:fontFamily="@font/poppins_medium"
+                    android:hint="CVV"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:paddingLeft="@dimen/_15sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/gray"
+                    android:textSize="@dimen/_12sdp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btn_pay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_45sdp"
+            android:layout_marginBottom="@dimen/_25sdp"
+            android:background="@drawable/view_background"
+            android:backgroundTint="@color/green"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="Pay"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp" />
+
+    </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</RelativeLayout>
